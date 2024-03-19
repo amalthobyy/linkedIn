@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linkedin</title>
+    <link rel="icon" href="images/faviconyo.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+        <a href="index.html" class="logo"><img src="images/logo.png"></a>
+        <div class="search-box">
+            <img src="images/search.png" >
+            <input type="text" placeholder="Search">
+
+        </div>
+    </div>
+        <div class="navbar-center">
+        <ul>
+            <Li><a href="#"><img src="images/home.png"> <span>home</span> </span></a></Li>
+            <Li><a href="#"><img src="images/network.png"> <span>My network</span> </span></a></Li>
+            <Li><a href="#"><img src="images/jobs.png"> <span>job</span> </span></a></Li>
+            <Li><a href="#"><img src="images/message.png"> <span>messaging</span> </span></a></Li>
+            <Li><a href="#"><img src="images/notification.png"> <span>notification</span> </span></a></Li>
+        </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+            <img src="images/user-40.jpg" class="nav-profile-img" onclick="toggleMenu()">
+        </div>
+        </div>
+
+        <!-- __----------profile dropdown------------ -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-40.jpg" >
+                    <div>
+                        <h3>Amal p Thobias</h3>
+                        <a href="profile.html">See your profile</a>
+
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link" >
+                    <img src="images/feedback.png" >
+                    <p>Give feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link" >
+                    <img src="images/setting.png" >
+                    <p>settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link" >
+                    <img src="images/help.png" >
+                    <p>Help & Supportk</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link" >
+                    <img src="images/display.png" >
+                    <p>display & Accesiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link" >
+                    <img src="images/logout.png" >
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- ------------ nav over-------- -->
+
+<div class="container">
+    <div class="profile-main">
+        <div class="profile-container">
+            <img src="images/cover-pic.png" width="100%">
+            <div class="profile-container-inner">
+                <img src="images/user-40.jpg" class="profile-pic">
+                <h1>Amal P Thobias</h1>
+                <b>Web Developer at google| Fomer Developer at DataStack and Intern at Oracle</b>
+                <p>Houston texas,US &middot; <a href="#">Contact Info</a></p>
+                <div class="mutual-connection">
+                    <img src="images/gudgirl.jpeg">
+                    <span>1 mutual connection: Betty David</span>
+                </div>
+                <div class="profile-btn">
+                    <a href="#" class="prime-btn"><img src="images/connect.png">Connect</a>
+                    <a href="#"><img src="images/chat.png">Message</a>
+
+                </div>
+            </div>
+
+         
+        </div>
+
+    </div>
+<!-- --------------------profile-sidebar---------------- -->
+    <div class="profile-sidebar"></div>
+</div>
+
+
+
+
+
+    <script>
+
+        let profileMenu =document.getElementById("profileMenu");
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+
+        }
+
+    </script>
+    
+</body>
+</html>
